@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './FlavorStar.png';
 import './App.css';
 
 class App extends Component {
@@ -7,9 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} alt="flavor star" />
           <p>
-            Foo bitch!
+            Flavor Star
           </p>
         </header>
       </div>
