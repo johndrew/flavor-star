@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlavorCircle /> should render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FlavorCircle
+    type="spice"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Circle
+          color="#f05332"
+          grow_duration="500"
+          height={NaN}
+          label_details={
+            Object {
+              "secondary_text": undefined,
+              "text": "Spice",
+              "text_color": "#fef3ef",
+              "text_size": "NaNpx",
+              "x": NaN,
+              "y": NaN,
+            }
+          }
+          width={NaN}
+        />,
+        "}",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "#f05332",
+          "grow_duration": "500",
+          "height": NaN,
+          "label_details": Object {
+            "secondary_text": undefined,
+            "text": "Spice",
+            "text_color": "#fef3ef",
+            "text_size": "NaNpx",
+            "x": NaN,
+            "y": NaN,
+          },
+          "radius": undefined,
+          "width": NaN,
+          "x": undefined,
+          "y": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "}",
+    ],
+    "type": "g",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Circle
+            color="#f05332"
+            grow_duration="500"
+            height={NaN}
+            label_details={
+              Object {
+                "secondary_text": undefined,
+                "text": "Spice",
+                "text_color": "#fef3ef",
+                "text_size": "NaNpx",
+                "x": NaN,
+                "y": NaN,
+              }
+            }
+            width={NaN}
+          />,
+          "}",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "#f05332",
+            "grow_duration": "500",
+            "height": NaN,
+            "label_details": Object {
+              "secondary_text": undefined,
+              "text": "Spice",
+              "text_color": "#fef3ef",
+              "text_size": "NaNpx",
+              "x": NaN,
+              "y": NaN,
+            },
+            "radius": undefined,
+            "width": NaN,
+            "x": undefined,
+            "y": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "}",
+      ],
+      "type": "g",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
