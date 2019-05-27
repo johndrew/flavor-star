@@ -58,7 +58,8 @@
     "build": "node scripts/build.js",
     "lint": "yarn run flow",
     "start": "node scripts/start.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:ci": "yarn test --ci --updateSnapshot"
   },
   "eslintConfig": {
     "extends": "react-app"
