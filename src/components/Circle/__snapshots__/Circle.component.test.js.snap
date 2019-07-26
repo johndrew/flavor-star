@@ -38,7 +38,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -222,7 +222,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -471,7 +471,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -633,7 +633,7 @@ ReactWrapper {
           "_debugOwner": [Circular],
           "_debugSource": Object {
             "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-            "lineNumber": 10,
+            "lineNumber": 19,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -690,7 +690,7 @@ ReactWrapper {
           "_debugOwner": [Circular],
           "_debugSource": Object {
             "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-            "lineNumber": 10,
+            "lineNumber": 19,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -744,7 +744,7 @@ ReactWrapper {
           "_debugOwner": [Circular],
           "_debugSource": Object {
             "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-            "lineNumber": 10,
+            "lineNumber": 19,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -813,7 +813,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -997,7 +997,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -1246,7 +1246,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -1420,7 +1420,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -1604,7 +1604,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -1853,7 +1853,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -2031,6 +2031,9 @@ ReactWrapper {
         ],
       },
       "context": Object {},
+      "defaults": Object {
+        "grow_duration": 500,
+      },
       "props": Object {},
       "refs": Object {
         "svg": <svg>
@@ -2119,7 +2122,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -2303,7 +2306,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -2552,7 +2555,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -2714,7 +2717,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -2771,7 +2774,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -2825,7 +2828,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-              "lineNumber": 10,
+              "lineNumber": 19,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -2894,7 +2897,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -3078,7 +3081,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -3327,7 +3330,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -3501,7 +3504,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                "lineNumber": 10,
+                "lineNumber": 19,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -3685,7 +3688,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -3934,7 +3937,7 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "/Users/taylorjohndrew/Dev/projects/flavor-star/src/components/Circle/Circle.component.js",
-                  "lineNumber": 10,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -4112,6 +4115,9 @@ ReactWrapper {
           ],
         },
         "context": Object {},
+        "defaults": Object {
+          "grow_duration": 500,
+        },
         "props": Object {},
         "refs": Object {
           "svg": <svg>

@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
 import PropTypes from 'prop-types';
+import { getTextSize } from '../../utilities/d3.utilities';
 
 export default class Circle extends Component {
+
+    constructor(props) {
+
+        super(props);
+        this.defaults = {
+            grow_duration: 500,
+        };
+    }
 
     render() {
 
@@ -22,21 +31,31 @@ export default class Circle extends Component {
         this.renderCircle();
     }
 
+    /**
+     * Attaches one or more labels to the svg
+     * If a secondary label is included, renders that too
+     */
     renderLabels() {
 
         if (this.props.label_details) {
 
+            const { height, width } = getTextSize(this.props.label_details.text);
             this.svg
                 .append('text')
-                .attr('x', this.props.radius / 2)
+                .attr('x', this.props.radius - width / 2)
                 .attr('y', this.props.radius)
                 .attr('fill', this.props.label_details.text_color)
                 .style('font-size', this.props.label_details.text_size)
-                .text(this.props.label_details.text);
+
+                // Append a slash if there is a second label
+                // .text(this.props.radius);
+                .text(`${this.props.label_details.text}${this.props.label_details.secondary_text ? '/' : ''}`);
+            
+            // If included, add text directly below main label
             this.props.label_details.secondary_text && this.svg
                 .append('text')
-                .attr('x', this.props.radius / 2)
-                .attr('y', this.props.radius + 20)
+                .attr('x', this.props.radius - width / 2)
+                .attr('y', this.props.radius + 10)
                 .attr('fill', this.props.label_details.text_color)
                 .style('font-size', this.props.label_details.text_size)
                 .text(this.props.label_details.secondary_text);
@@ -53,7 +72,7 @@ export default class Circle extends Component {
             .style("fill", this.props.color)
             .attr("r", 0)
             .transition()
-            .duration(this.props.grow_duration)
+            .duration(this.props.grow_duration || this.defaults.grow_duration)
             .attr("r", this.props.radius);
         this.renderLabels();
     }

@@ -33,6 +33,7 @@
     "jest": "23.6.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
+    "lodash": "^4.17.11",
     "mini-css-extract-plugin": "0.4.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
@@ -58,8 +59,10 @@
     "build": "node scripts/build.js",
     "lint": "yarn run flow",
     "start": "node scripts/start.js",
-    "test": "node scripts/test.js",
-    "test:ci": "yarn test --ci --updateSnapshot"
+    "test": "jest",
+    "test:ci": "yarn test --ci --updateSnapshot",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -71,6 +74,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "flow-bin": "^0.98.1",
