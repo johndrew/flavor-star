@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import FlavorCircle from '../FlavorCircle/FlavorCircle.component';
+import Arrow from '../Arrow/Arrow.component';
 
-export default class FlavorStar extends Component {
+const backgroundColor = '#282C34';
+const lightArrowColor = '#FFFFFF';
+const darkArrowColor = '##58585A';
+
+class FlavorStar extends Component {
 
     render() {
 
-        const width = 640;
+        const width = this.props.width;
         const height = width;
         const radius = width * 0.109375;
         const length = width * 0.625;
@@ -22,15 +27,23 @@ export default class FlavorStar extends Component {
         });
 
         return (
-            <div>
+            <div style={{ backgroundColor }}>
                 <svg
                     height={height}
                     width={width}>
                     <FlavorCircle type="salty_umami" x={top.x} y={top.y} radius={radius} />
                     <FlavorCircle type="sweet" x={top_right.x} y={top_right.y} radius={radius} />
-                    <FlavorCircle type="sour" x={bottom_right.x} y={bottom_right.y} radius={radius} /> */}
+                    <FlavorCircle type="sour" x={bottom_right.x} y={bottom_right.y} radius={radius} />
                     <FlavorCircle type="bitter" x={bottom_left.x} y={bottom_right.y} radius={radius} />
                     <FlavorCircle type="spice" x={top_left.x} y={top_left.y} radius={radius} />
+
+                    <Arrow
+                        color={lightArrowColor}
+                        doubleSided={true}
+                        headX={top.x}
+                        headY={top.y + radius * 2}
+                        tailX={bottom_left.x}
+                        tailY={bottom_left.y} />
                 </svg>
             </div>
         );
@@ -72,11 +85,17 @@ export default class FlavorStar extends Component {
             calcAngle -= 144 * (Math.PI / 180); // 144 degrees in radians
         }
         return {
-            bottom_left: points[4],
-            bottom_right: points[2],
+            bottom_left: points[2],
+            bottom_right: points[4],
             top: points[3],
             top_left: points[0],
             top_right: points[1],
         };
     }
 }
+
+FlavorStar.defaultProps = {
+    width: 640,
+};
+
+export default FlavorStar;

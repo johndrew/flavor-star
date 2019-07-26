@@ -11,7 +11,7 @@ describe('<Arrow />', () => {
         expect(wrapper).toMatchSnapshot();
     });
 
-    describe.only('#angle', () => {
+    describe('#angle', () => {
 
         it('should return 0 for a horizontal arrow', () => {
             
@@ -49,7 +49,7 @@ describe('<Arrow />', () => {
             expect(Math.round(wrapper.instance().angle)).toEqual(45);
         });
 
-        it('should return -45 for a top right diagonal arrow', () => {
+        it('should return 135 for a top right diagonal arrow', () => {
             
             const props = {
                 headX: 150,
@@ -58,7 +58,7 @@ describe('<Arrow />', () => {
                 tailY: 150,
             };
             const wrapper = shallow(<Arrow {...props} />);
-            expect(Math.round(wrapper.instance().angle)).toEqual(-45);
+            expect(Math.round(wrapper.instance().angle)).toEqual(135);
         });
 
         it('should return -45 for a bottom left diagonal arrow', () => {
@@ -73,7 +73,7 @@ describe('<Arrow />', () => {
             expect(Math.round(wrapper.instance().angle)).toEqual(-45);
         });
 
-        it('should return 45 for a bottom right diagonal arrow', () => {
+        it.only('should return -135 for a bottom right diagonal arrow', () => {
             
             const props = {
                 headX: 150,
@@ -82,7 +82,7 @@ describe('<Arrow />', () => {
                 tailY: 50,
             };
             const wrapper = shallow(<Arrow {...props} />);
-            expect(Math.round(wrapper.instance().angle)).toEqual(45);
+            expect(Math.round(wrapper.instance().angle)).toEqual(-135);
         });
     });
 });

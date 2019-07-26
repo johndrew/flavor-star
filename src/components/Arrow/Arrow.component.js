@@ -8,26 +8,24 @@ class Arrow extends Component {
 
         this.svg = null;
         this.defaultThickness = 6;
-
-        // Draw the arrowhead on the left if the arrowhead will rotate upwards
-        // Draw the arrowhead on the right if the arrowhead will rotate downwards
-        // Default to the left
         this.headIsDown = this.props.headY > this.props.tailY;
+        // console.log('------------------------------------');
+        // console.log(this.props);
+        // console.log('slope', this.slope);
+        // console.log('angle', this.angle);
+        // console.log('------------------------------------');
     }
 
     render() {
 
         return (
-            <div>
-                <svg
-                    height={this.width}
-                    ref='svg'
-                    width={this.width}
-                    style={{ border: 'solid 1px black' }}
-                    x={this.props.headX}
-                    y={this.props.headY}>
-                </svg>
-            </div>
+            <svg
+                height={this.width}
+                ref='svg'
+                width={this.width}
+                x={this.props.headX}
+                y={this.props.headY}>
+            </svg>
         );
     }
 
@@ -39,7 +37,9 @@ class Arrow extends Component {
 
     renderArrow() {
 
-        this.renderArrowHead(this.headIsDown);
+        const foo = this.angle >= 90 && this.angle <= -90;
+        this.renderArrowHead(foo);
+        // this.renderArrowHead(this.headIsDown);
         if (this.props.doubleSided) this.renderArrowHead(!this.headIsDown);
         this.svg.append('rect')
             .attr('x', 0)
@@ -72,8 +72,37 @@ class Arrow extends Component {
             c = this.getDistance(this.props.tailX - this.width, this.props.tailY, this.props.headX, this.props.headY);
         }
 
+        const ratioA = (Math.pow(b, 2) + Math.pow(c, 2) - Math.pow(a, 2)) / (2 * b * c);
+        const ratioB = (Math.pow(a, 2) + Math.pow(c, 2) - Math.pow(b, 2)) / (2 * a * c);
         const ratioC = (Math.pow(a, 2) + Math.pow(b, 2) - Math.pow(c, 2)) / (2 * a * b);
-        return ((ratioC >= 0 ? Math.acos(ratioC) : Math.asin(ratioC)) * 180) / Math.PI;
+        // console.log('------------------ratioA------------------');
+        // console.log('ratio', ratioA)
+        // console.log('cos',  (Math.cos(ratioA) * 180) / Math.PI);
+        // console.log('sin',  (Math.sin(ratioA) * 180) / Math.PI);
+        // console.log('tan',  (Math.tan(ratioA) * 180) / Math.PI);
+        // console.log('acos', (Math.acos(ratioA) * 180) / Math.PI);
+        // console.log('asin', (Math.asin(ratioA) * 180) / Math.PI);
+        // console.log('atan', (Math.atan(ratioA) * 180) / Math.PI);
+        // console.log('------------------------------------');
+        // console.log('------------------ratioB------------------');
+        // console.log('ratio', ratioB)
+        // console.log('cos',  (Math.cos(ratioB) * 180) / Math.PI);
+        // console.log('sin',  (Math.sin(ratioB) * 180) / Math.PI);
+        // console.log('tan',  (Math.tan(ratioB) * 180) / Math.PI);
+        // console.log('acos', (Math.acos(ratioB) * 180) / Math.PI);
+        // console.log('asin', (Math.asin(ratioB) * 180) / Math.PI);
+        // console.log('atan', (Math.atan(ratioB) * 180) / Math.PI);
+        // console.log('------------------------------------');
+        console.log('------------------ratioC------------------');
+        console.log('ratio', ratioC)
+        console.log('cos',  (Math.cos(ratioC) * 180) / Math.PI);
+        console.log('sin',  (Math.sin(ratioC) * 180) / Math.PI);
+        console.log('tan',  (Math.tan(ratioC) * 180) / Math.PI);
+        console.log('acos', (Math.acos(ratioC) * 180) / Math.PI);
+        console.log('asin', (Math.asin(ratioC) * 180) / Math.PI);
+        console.log('atan', (Math.atan(ratioC) * 180) / Math.PI);
+        console.log('------------------------------------');
+        return ((!this.headIsDown ? Math.acos(ratioC) : Math.asin(ratioC)) * 180) / Math.PI;
     }
 
     /**
@@ -85,9 +114,14 @@ class Arrow extends Component {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
+    get slope() {
+
+        return (this.props.tailY - this.props.headY) / (this.props.tailX - this.props.headX);
+    }
+
     renderArrowHead(arrowTipDown) {
 
-        const arrowHeadLength = 20;
+        const arrowHeadLength = this.width / 5;
         const arrowTipX = arrowTipDown ? this.width : 0;
         const arrowTipY = Math.abs(this.width / 2);
         const arrowX = arrowTipDown ? arrowTipX + 5 : arrowTipX - 5;

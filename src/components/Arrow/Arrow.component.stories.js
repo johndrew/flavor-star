@@ -12,7 +12,8 @@ storiesOf('Arrow', module)
     .add('top right diagonal arrow', arrowTopRightDiagonal)
     .add('bottom right diagonal arrow', arrowBottomRightDiagonal)
     .add('non uniform diagonal arrow', arrowNonUniformDiagonal)
-    .add('double sided arrow', arrowDoubleSided);
+    .add('double sided arrow', arrowDoubleSided)
+    .add('bug', bug);
 
 function arrowWithoutProps() {
     
@@ -105,6 +106,17 @@ function arrowDoubleSided() {
     
     const props = {
         doubleSided: true,
+    };
+    return <Arrow {...props} />;
+}
+
+function bug() {
+    
+    const props = {
+        headX: 135,
+        headY: 97.34574719946391,
+        tailX: 73.19660112501055,
+        tailY: 217.55705045849464,
     };
     return <Arrow {...props} />;
 }
