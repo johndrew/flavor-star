@@ -68,10 +68,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "terser": "3.14.1"
+    "terser": "4.8.1"
   },
   "resolutions": {
-    "terser": "3.14.1"
+    "terser": "4.8.1"
   },
   "jest": {
     "collectCoverageFrom": [
